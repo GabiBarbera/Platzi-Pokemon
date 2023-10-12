@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+h1 {
+    text-align: left;
+    color: hsl(224.78deg 53.6% 24.51%);
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+h2 {
+    text-align: center;
+    color: hsl(224.78deg 53.6% 24.51%);
+    font-family: "Sedgwick Ave Display", cursive;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../imagenes/SI_Pokemon.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-color: #bde0fe;
+}
+
+.active {
+    display: flex;
+    width: 120px;
+    height: 120px;
+
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tarjetas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 42rem;
+}
+
+.tarjetaPokemon {
+    display: flex;
+    width: 190px;
+    height: 120px;
+    box-sizing: border-box;
+    margin: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: hsl(213.23deg 57.52% 44.31%);
+    border-radius: 54px;
+}
+
+#botonMascota {
+    width: 180px;
+    height: 34px;
+    border-radius: 20px;
+    border: 2px solid #97c8e2;
+    background-color: transparent;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: x-large;
+    color: #DC0000;
+    margin-top: 14px;
+
+}
+
+#seleccionar-ataque {
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#mensajesFinales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonReiniciar {
+    width: 180px;
+    height: 34px;
+    border-radius: 20px;
+    border: 2px solid #97c8e2;
+    background-color: transparent;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: x-large;
+    color: #DC0000;
+    margin-top: 14px;
+}
+
+.todosAtaque {
+    display: flex;
+}
+
+.botonesAtaque {
+    display: flex;
+    height: 34px;
+    border-radius: 20px;
+    border: 2px solid #97c8e2;
+    background-color: transparent;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: x-large;
+    color: #DC0000;
+    margin-top: 14px;
+}
+
+#mensajes {
+    margin: 20px;
+    border-radius: 34px;
+    background-color: #bbeeff;
+}
+
+.botonesAtaque:active {
+    background-color: hsl(213.23deg 57.52% 44.31%);
+    border-radius: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

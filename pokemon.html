@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./assets/estilos/csspokemon.css">
+</head>
+
+<body>
+    <main>
+        <h1>Bienvenidos a Pokemon</h1>
+        <!--chiarizard -> fuego
+            squirtle -> agua
+            diglett -> tierra
+            volcanion -> Agua y Fuego
+            tuca -> Agua y Tierra
+            camerupt -> Tierra y Fuego-->
+
+        <section id="seleccionar-mascota">
+
+            <h2>🔥 💧 🥀 Elige tu mascota ♨️ 🌎 ☄️</h2>
+            <h2>Elige tu ataque:</h2>
+
+            <div id="tarjetas">
+            </div>
+            <button id="botonMascota">Elegir</button>
+        </section>
+        <section id="seleccionar-ataque">
+            <div class="todosAtaques">
+                <button id="botonFuego" class="botonesAtaque">FUEGO 🔥</button>
+                <button id="botonAgua" class="botonesAtaque">AGUA 💧</button>
+                <button id="botonTierra" class="botonesAtaque">TIERRA 🥀</button>
+                <button id="botonAyf" class="botonesAtaque">AGUA Y FUEGO ♨️</button>
+                <button id="botonAyt" class="botonesAtaque">AGUA Y TIERRA 🌎</button>
+                <button id="botonTyf" class="botonesAtaque">TIERRA Y FUEGO ☄️</button>
+            </div>
+
+            <div id="mensajesFinales">
+                <section id="mensajes">
+                </section>
+
+                <section id="reiniciar">
+                    <h4>Quieres volver a jugar?</h4>
+                    <button id="botonReiniciar">Reiniciar</button>
+                </section>
+
+            </div>
+
+            <p>Tu mascota <span id="mascotaJugador"></span> tiene <span id="vidasJugador"> 3</span> vidas</p>
+            <p>La mascota <span id="mascotaEnemigo"></span> del enemigo tiene <span id="vidasEnemigo"> 3</span> vidas
+            </p>
+
+        </section>
+    </main>
+    <script src="./assets/js/js.js"></script>
+</body>
